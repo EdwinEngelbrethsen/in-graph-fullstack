@@ -72,8 +72,6 @@ The first step towards better services is a clear overview of current affairs. I
 
 <h1 id="fullstackin">Chart API Specification</h1>
 
-> Scroll down for code samples, example requests and responses. Select a language for code samples from the tabs above or the mobile navigation menu.
-
 This specification describes the API that is used to serve data for the front-end chart
 
 Base URLs:
