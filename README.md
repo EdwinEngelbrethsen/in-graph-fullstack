@@ -13,7 +13,7 @@
 #### What To Do
 
     - Front-end: implement 2 charts that consume external data
-    - Back-end: build API to serve data for the charts (details below and in "spec" folder)
+    - Back-end: build .NET API to serve data for the charts (details below and in "spec" folder)
     - have fun, and don't overdose on caffeine
 
 ### 🎨 Adobe XD Design Handoff
@@ -27,6 +27,7 @@ If you have XD installed, feel free to use the XD file. If not, simply use the d
 Here’s an overview of the folder structure. Each element is briefly described.
 
     ├── public/    # contains the HTML file so you can tweak it, for example, to set the page title and other static files
+    ├── spec/    # contains the OpenAPI spec file you can use to build API
     ├── src/               # the main container for your project
     │   │
     │   ├── assets/          # images, icons, colors
@@ -50,6 +51,10 @@ Here’s an overview of the folder structure. Each element is briefly described.
   - build 2 charts ( Individuals and Companies ) around the data included in the Homepage file
   - free up your creativity, charts are extremely flexible and it only depends on you how readable the data is
   - remember to include a gradient on the charts, it's a final touch to the project
+- **Chart API**
+  - RESTful API built with ASP.NET framework
+  - Fully complies with OpenAPI spec provided
+  - You can add security features (like token auth) for bonus points (not included in OpenAPI spec)
 
 ### 🛣️ Roadmap ( clarify clickable elements ):
 
