@@ -33,7 +33,6 @@ Here’s an overview of the folder structure. Each element is briefly described.
     │   ├── assets/          # images, icons, colors
     │   ├── components/          # anything that could be a reusable piece of UI lands here
     │   ├── screens/       # each screen is build with multiple components and together they create a screen to display for a user such as Homepage, About, Catalog etc
-    │   ├── services/           # these files work as a temporary back-end for the project
     │   ├── utls/      # reusable JavaScript functions that support the project such as custom hooks
 
 ### 📖 Specification Overview:
@@ -48,7 +47,7 @@ Here’s an overview of the folder structure. Each element is briefly described.
 - **Charts**
   - decide on a library you want to use for your implementation
   - review the code base, find a suitable place for the charts
-  - build 2 charts ( Individuals and Companies ) around the data included in the Homepage file
+  - build 2 charts ( Individuals and Companies ) around the data provided by Chart API
   - free up your creativity, charts are extremely flexible and it only depends on you how readable the data is
   - remember to include a gradient on the charts, it's a final touch to the project
 - **Chart API**

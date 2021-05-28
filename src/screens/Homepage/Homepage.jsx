@@ -3,14 +3,11 @@ import Navbar from "../../components/Navbar/Navbar";
 import Header from "../../components/Header/Header";
 import MainBoard from "../../components/MainBoard/MainBoard";
 
-import { fakeData } from "../../services/individuals";
-import { fakeCompanies } from "../../services/companies";
-
 import styles from "./Homepage.module.css";
 
 const Homepage = () => {
-  const [individualsData] = useState(fakeData());
-  const [companiesData] = useState(fakeCompanies());
+  const [individualsData] = useState([]);
+  const [companiesData] = useState([]);
   const [currentUser] = useState("Elsa Andersen");
 
   const [individuals] = useState({
