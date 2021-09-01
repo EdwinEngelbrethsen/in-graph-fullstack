@@ -14,13 +14,11 @@
 
     - Front-end: implement 2 charts that consume external data
     - Back-end: build .NET API to serve data for the charts (details below and in "spec" folder)
-    - have fun, and don't overdose on caffeine
 
 ### 🎨 Adobe XD Design Handoff
 
     Design Handoff: https://xd.adobe.com/view/82ec3234-0ad0-4067-86f2-8d244dcd22c2-d7bf/specs/
 
-If you have XD installed, feel free to use the XD file. If not, simply use the design handoff url.
 
 ### 📁 Folder Structure
 
@@ -47,13 +45,23 @@ Here’s an overview of the folder structure. Each element is briefly described.
 - **Charts**
   - decide on a library you want to use for your implementation
   - review the code base, find a suitable place for the charts
-  - build 2 charts ( Individuals and Companies ) around the data provided by Chart API
-  - free up your creativity, charts are extremely flexible and it only depends on you how readable the data is
+  - build 2 charts ( Individuals and Companies ) around the data provided by the Chart API
+  - you are free to be creative with the implementation of the charts, as long as they follow the specifications and designs provided. 
   - remember to include a gradient on the charts, it's a final touch to the project
 - **Chart API**
   - RESTful API built with ASP.NET framework
   - Fully complies with OpenAPI spec provided
   - You can add security features (like token auth) for bonus points (not included in OpenAPI spec)
+  
+### What will be evaluated
+- **Design QA:** 
+  - does your implementation match with the Design handoff, both in color and general aesthetics ? 
+  - have you properly aligned your components following the grids and guidelines of the handoff ? 
+- **Code QA:** 
+  - are your component interfaces logical and well-named, and are they easy for others to build with ? 
+  - is your code clean, following internally consistent rules w.r.t spacing, quote-marks etc ?
+  - are you using up-to-date syntax, e.g. making use of React Hooks over class components + 
+  - is your code consistent with the specifications provided ? (If unsure why; read up on Design-First ![swagger-blog on api-design](https://swagger.io/blog/api-design/design-first-or-code-first-api-development/)
 
 ### 🛣️ Roadmap ( clarify clickable elements ):
 
