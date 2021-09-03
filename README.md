@@ -9,6 +9,7 @@
   - [Folder Structure](#-📁-Folder-Structure)
   - [Evaluation](#-What-will-be-evaluated)
   - [Recommended Libraries](#-🗁-Recommended-Libraries)
+  
 **Section Specs**
 - [Front End](#-Front-End)
   - [Front End specs](#-🔑-Front-End-Requirements:)
