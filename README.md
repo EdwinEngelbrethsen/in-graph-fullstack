@@ -9,7 +9,7 @@
 
 ### 🖼️ Visual References
 ![Chart Challenge](src/assets/images/project.png)
-> Design: https://xd.adobe.com/view/82ec3234-0ad0-4067-86f2-8d244dcd22c2-d7bf/screen/c044ad23-fcef-4d19-8425-4349310e6b35/specs/
+> **Design:** https://xd.adobe.com/view/82ec3234-0ad0-4067-86f2-8d244dcd22c2-d7bf/screen/c044ad23-fcef-4d19-8425-4349310e6b35/specs/ <br> **API:** You can find the OpenAPI specification in `spec/oas.yaml` as well as in the "🖥 Back-End Details" section below.
 
 <br>
 
