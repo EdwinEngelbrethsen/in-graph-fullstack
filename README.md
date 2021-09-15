@@ -2,7 +2,7 @@
 
 ![Chart Challenge](src/assets/images/project.png)
 
-### Table of Content: 
+### Table of Content:
 - [Intro](#-Intro)
   - [Setup](#-Setup)
   - [What to do](#-What-To-Do)
@@ -22,23 +22,62 @@
   - [Schemas](#-Schemas)
 
 
-### 🚀 Quickstart Q/A
-- Q: What should I do ? 
->  - :A Hop down and read the "what to do" section, the specifications, then have a look at the designs and figure out how to best implement these designs into a working prototype of the chart.
-- Where do I find the files for X? 
->  - Check the section on folder structure, if it is still unclear let us know in the discord.
-- How do I deliver ? 
->  - To deliver your solution you'll have to commit and push the repo, and then go to the Diggit-dashboard for the challenge to submit for evaluation. 
-- How do I know if I'm ready to submit ? 
->  - Check the [Evaluation](#-What-will-be-evaluated) criteria section, where it is outlined a few quick questions to answer. If you feel you can answer to the positive on all these then you're probably ready to submit your solution. However you're free to add whatever extra layers of QA on top of these to suit your professional standards. 
-- I'm Stuck, help!
->  - oof... we don't really do debugging for active challenges, but what we can recommend is that you take the extra time you need. You may just need to take a break, go have a coffee and take a walk. We often find it helps to simply take your mind off the problem for a little while to reboot your angle of approach. Once you come back, check again your progress towards the goals you'll be evaluated on, and see if there is something you hadn't considered before. We wish you the best of luck!
+### 🚀 Quickstart
 
-### 👴 Challenge Context
+1. **Install the dependencies**
 
-Innovation Norway is in charge of giving Norwegian ideas global opportunities. They offer critical help and support to startups. Each and every day, both companies and individuals book meetings with their advisors.
+   ```shell
+   npm install
+   ```
 
-The first step towards better services is a clear overview of current affairs. Innovation Norway needs to see how many companies and individuals they are in contact with. In the future, this dashboard can also show valuable insights such as the overall satisfaction, newly identified opportunities as well as potential efficiency improvements in their processes.
+2. **Run the project**
+
+   ```shell
+   npm start
+   ```
+
+<details>
+  <summary>**Q/A** - Questions & Answers</summary>
+
+  > common questions and answers for getting started quickly
+
+  - Q: What should I do ? 
+  >  - :A Hop down and read the "what to do" section, the specifications, then have a look at the designs and figure out how to best implement these designs into a working prototype of the chart.
+  - Where do I find the files for X? 
+  >  - Check the section on folder structure, if it is still unclear let us know in the discord.
+  - How do I deliver ? 
+  >  - To deliver your solution you'll have to commit and push the repo, and then go to the Diggit-dashboard for the challenge to submit for evaluation. 
+  - How do I know if I'm ready to submit ? 
+  >  - Check the [Evaluation](#-What-will-be-evaluated) criteria section, where it is outlined a few quick questions to answer. If you feel you can answer to the positive on all these then you're probably ready to submit your solution. However you're free to add whatever extra layers of QA on top of these to suit your professional standards. 
+  - I'm Stuck, help!
+  >  - oof... we don't really do debugging for active challenges, but what we can recommend is that you take the extra time you need. You may just need to take a break, go have a coffee and take a walk. We often find it helps to simply take your mind off the problem for a little while to reboot your angle of approach. Once you come back, check again your progress towards the goals you'll be evaluated on, and see if there is something you hadn't considered before. We wish you the best of luck!
+
+</details>
+
+
+
+### 🎯 What To Do
+
+Most of the dashboard is ready. But one important section is missing. 
+
+Your task is to implement the gradient area charts - the centerpiece of this design. To provide charts with data you will need to create an ASP.NET API server.
+
+The openAPI spec has already been provided.
+
+So, in summary:
+- Front-end: implement 2 charts that consume external data
+- Back-end: build .NET API to serve data for the charts (details below and in "spec" folder)
+
+<details>
+  <summary>**Context** - the story leading up to your challenge</summary>
+
+  > the story leading up to your challenge
+
+  Innovation Norway is in charge of giving Norwegian ideas global opportunities. They offer critical help and support to startups. Each and every day, both companies and individuals book meetings with their advisors.
+
+  The first step towards better services is a clear overview of current affairs. Innovation Norway needs to see how many companies and individuals they are in contact with. In the future, this dashboard can also show valuable insights such as the overall satisfaction, newly identified opportunities as well as potential efficiency improvements in their processes.
+
+</details>
 
 
 
