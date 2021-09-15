@@ -318,9 +318,7 @@ So, in summary:
 
 
 ### 📋 Criteria
-> aka. evaluation, success criteria, quality assurance, qa, etc. - they're all pointing to the same thing. This section.
-
-Your solution will be quality assured / evaluated based on a set of criteria (aka. acceptance criteria, success criteria, etc.). 
+> evaluation, success criteria, quality assurance, qa, etc. - they're all referring to the same thing. This section. 
 
 Your performance will be evaluated on primarily these two fronts; design and code. 
 The weights of these is roughly 40% on design and 60% on the code, and the questions are asked in order of importance within their respective subfields.
