@@ -1,27 +1,15 @@
-### 🖼️ Visual References
+# Gradient Area Charts Full-Stack
+> Implement two gradient area charts and a supporting back-end.
 
+- [🚀 Quickstart](#intro)
+- [🎯 What To Do](#intro)
+- [📋 Criteria](#intro)
+
+### 🖼️ Visual References
 ![Chart Challenge](src/assets/images/project.png)
 > Design Handoff: https://xd.adobe.com/view/82ec3234-0ad0-4067-86f2-8d244dcd22c2-d7bf/specs/
 
-### Table of Content:
-- [Intro](#intro)
-  - [Setup](#setup)
-  - [What to do](#what-to-do)
-  - [Folder Structure](#folder-Structure)
-  - [Evaluation](#what-will-be-evaluated)
-  - [Recommended Libraries](#Recommended-Libraries)
-  
-**Section Specs**
-- [Front End](#front-End)
-  - [Front End specs](#-🔑-Front-End-Requirements:)
-  - [XD Handoff](#-🎨-Design-Handoff)
-- [Chart API](#chart-API)
-  - [Chart API requirements](#-🔑-Chart-API-Requirements)
-  - [API Specifications](#-API-Specifications)
-  - [Get list of companies](#-Get-list-of-all-companies)
-  - [Get list of individuals](#-Get-list-of-all-individuals)
-  - [Schemas](#schemas)
-
+<br>
 
 ### 🚀 Quickstart
 
