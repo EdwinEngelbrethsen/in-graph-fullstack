@@ -1,9 +1,9 @@
 # Gradient Area Charts Full-Stack
 > Implement two gradient area charts and a supporting back-end.
 
-- [🚀 Quickstart](#intro)
-- [🎯 What To Do](#intro)
-- [📋 Criteria](#intro)
+- [🚀 Quickstart](#quickstart)
+- [🎯 What To Do](#what-to-do)
+- [📋 Criteria](#criteria)
 
 ### 🖼️ Visual References
 ![Chart Challenge](src/assets/images/project.png)
