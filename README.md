@@ -82,7 +82,7 @@ So, in summary:
 
 
 # Intro
-[to table of contents](#table-of-content:)
+[to table of contents](#table-of-content)
 
 This first section should provide you with the overview to get started, and serve as a quick reference for what to do next. 
 
@@ -126,7 +126,7 @@ The weights of these is roughly 40% on design and 60% on the code, and the quest
 
 --- 
 # Front End :
-[to table of contents](#table-of-content:)
+[to table of contents](#table-of-content)
 This section contains the information regarding the front-end implementation expected from you. 
 While 
 
@@ -167,7 +167,7 @@ While
 ---
 
 # Chart API:
-[to table of contents](#table-of-content:)
+[to table of contents](#table-of-content)
 
 
 ### 🔑 Chart API Requirements
@@ -381,4 +381,4 @@ This operation does not require authentication
 
 
 
-[to table of contents](#table-of-content:)
+[to table of contents](#table-of-content)
