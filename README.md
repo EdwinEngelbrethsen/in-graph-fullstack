@@ -9,7 +9,7 @@
 
 ### 🖼️ Visual References
 ![Chart Challenge](src/assets/images/project.png)
-> Design Handoff: https://xd.adobe.com/view/82ec3234-0ad0-4067-86f2-8d244dcd22c2-d7bf/specs/
+> Design: https://xd.adobe.com/view/82ec3234-0ad0-4067-86f2-8d244dcd22c2-d7bf/screen/c044ad23-fcef-4d19-8425-4349310e6b35/specs/
 
 <br>
 
@@ -59,6 +59,7 @@
 <br></details><br>
 
 ### 🎯 What To Do
+> https://www.youtube.com/watch?v=4dfC_rX8eJw
 
 Most of the dashboard is ready. But one important section is missing. Your task is to implement the gradient area charts - the centerpiece of this design. To provide charts with data you will need to create an ASP.NET API server. The openAPI spec has already been provided.
 
@@ -99,7 +100,7 @@ So, in summary:
 <details>
   <summary><b>🎨 Design Details</b></summary>
   
-  > Design Handoff: https://xd.adobe.com/view/82ec3234-0ad0-4067-86f2-8d244dcd22c2-d7bf/specs/
+  > Design Handoff: https://xd.adobe.com/view/82ec3234-0ad0-4067-86f2-8d244dcd22c2-d7bf/screen/c044ad23-fcef-4d19-8425-4349310e6b35/specs/
 <br>
 </details>
 
