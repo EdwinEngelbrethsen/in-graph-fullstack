@@ -5,6 +5,8 @@
 - [🎯 What To Do](#what-to-do)
 - [📋 Criteria](#criteria)
 
+<br>
+
 ### 🖼️ Visual References
 ![Chart Challenge](src/assets/images/project.png)
 > Design Handoff: https://xd.adobe.com/view/82ec3234-0ad0-4067-86f2-8d244dcd22c2-d7bf/specs/
