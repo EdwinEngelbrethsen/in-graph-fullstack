@@ -1,6 +1,7 @@
 ### 🖼️ Visual References
 
 ![Chart Challenge](src/assets/images/project.png)
+> Design Handoff: https://xd.adobe.com/view/82ec3234-0ad0-4067-86f2-8d244dcd22c2-d7bf/specs/
 
 ### Table of Content:
 - [Intro](#intro)
@@ -38,7 +39,7 @@
 
 
 <br><details>
-  <summary><b>Questions & Answers</b></summary>
+  <summary><b>❓ Common Questions</b></summary>
   Common questions and answers for getting started quickly.
 
   - Q: What should I do? 
@@ -54,7 +55,7 @@
 <br></details>
 
 <details>
-  <summary><b>Folder Structure</b></summary>
+  <summary><b>📁 Folder Structure</b></summary>
   Here’s an overview of the folder structure. Each element is briefly described.
 
       ├── public/    # contains the HTML file so you can tweak it, for example, to set the page title and other static files
@@ -76,44 +77,17 @@ So, in summary:
 - Back-end: build .NET API to serve data for the charts (details below and in "spec" folder)
 
 <br><details>
-  <summary><b>Context</b> - the story leading up to your challenge</summary>
+  <summary><b>🎭 Backstory</b></summary>
 
   > the story leading up to your challenge
 
   Innovation Norway is in charge of giving Norwegian ideas global opportunities. They offer critical help and support to startups. Each and every day, both companies and individuals book meetings with their advisors.
 
-  The first step towards better services is a clear overview of current affairs. Innovation Norway needs to see how many companies and individuals they are in contact with. In the future, this dashboard can also show valuable insights such as the overall satisfaction, newly identified opportunities as well as potential efficiency improvements in their processes.
+  The first step towards better services is a clear overview of current affairs. Innovation Norway needs to see how many companies and individuals they are in contact with. In the future, this dashboard can also show valuable insights such as the overall satisfaction, newly identified opportunities as well as potential efficiency improvements in their processes.<br>
+</details>
 
-</details><br>
-
-
-
-# Intro
-[to table of contents](#table-of-content)
-
-This first section should provide you with the overview to get started, and serve as a quick reference for what to do next.
-
-### What will be evaluated
-Your performance will be evaluated on primarily these two fronts; design and code. 
-The weights of these is roughly 40% on design and 60% on the code, and the questions are asked in order of importance within their respective subfields.
-- **Design QA:** 
-  - does your implementation match with the Design handoff, both in color and general aesthetics ? 
-  - have you properly aligned your components following the grids and guidelines of the handoff ? 
-- **Code QA:**
-  - are your component interfaces logical and well-named, and are they easy for others to build with ? 
-  - is your code consistent with the specifications provided ? (If unsure why; read up on Design-First ![swagger-blog on api-design](https://swagger.io/blog/api-design/design-first-or-code-first-api-development/) )
-  - is your code clean, following internally consistent rules w.r.t spacing, quote-marks etc ?
-  - are you using modern syntax, e.g. making use of React Hooks over class components ?
-
-
---- 
-# Front End :
-[to table of contents](#table-of-content)
-This section contains the information regarding the front-end implementation expected from you. 
-While 
-
-
-### 🔑 Front End Requirements: 
+<details>
+  <summary><b>💻 Front-End Details</b></summary>
 
 - **Visual aspects**
   - Target Screen: **1920x1080** (but should work for all common desktop sizes)
@@ -126,33 +100,21 @@ While
   - build 2 charts ( Individuals and Companies ) around the data provided by the Chart API
   - you are free to be creative with the implementation of the charts, as long as they follow the specifications and designs provided. 
   - remember to include a gradient on the charts, it's a final touch to the project
+- **Recommended Libraries**
+  - **Charts** - Chart.js; that's what we consider the most convenient one, but feel free to work with any library that works for you!
+  - React modules are fine, but for any **CSS logic** - styled-components.
+  - Any **custom animation?** - gsap.
+<br></details>
 
-### 🎨 Design Handoff
+<details>
+  <summary><b>🎨 Design Details</b></summary>
+  
+  > Design Handoff: https://xd.adobe.com/view/82ec3234-0ad0-4067-86f2-8d244dcd22c2-d7bf/specs/
+<br>
+</details>
 
-    Design Handoff: https://xd.adobe.com/view/82ec3234-0ad0-4067-86f2-8d244dcd22c2-d7bf/specs/
-
-### 🗁 Recommended Libraries
-
-- **Charts** - Chart.js; that's what we consider the most convenient one, but feel free to work with any library that works for you!
-- React modules are fine, but for any **CSS logic** - styled-components.
-- Any **custom animation?** - gsap.
-
-
-### 🛣️ Roadmap ( clarify clickable elements ):
-
-- **Top Navbar, Horizontal and vertical bars** - placeholders only.
-- **Dropdowns** - feel free to add some bells and whistles, but it's not a requirement.
-- **Charts** - charts don't include any clickable elements, but pop-up hover effects filled with data, improves readability.
-
-
-
----
-
-# Chart API:
-[to table of contents](#table-of-content)
-
-
-### 🔑 Chart API Requirements
+<details>
+  <summary><b>🖥 Back-End Details</b></summary>
 
 - **Chart API**
   - RESTful API built with ASP.NET framework
@@ -160,207 +122,225 @@ While
   - You can add security features (like token auth) for bonus points (not included in OpenAPI spec)
 
 
-### API Specifications 
+  ### API Specifications 
 
-This specification describes the API that is used to serve data for the front-end chart
+  This specification describes the API that is used to serve data for the front-end chart
 
-Base URLs:
+  Base URLs:
 
-* <a href="http://localhost:3000">http://localhost:3000</a>
+  * <a href="http://localhost:3000">http://localhost:3000</a>
 
-<h2 id="fullstackin-default">ENDPOINTS</h1>
+  <h2 id="fullstackin-default">ENDPOINTS</h1>
 
 
-### Get list of all companies
+  ### Get list of all companies
 
-<a id="opIdget-companies"></a>
+  <a id="opIdget-companies"></a>
 
-`GET /companies`
+  `GET /companies`
 
-Retrieve a list of companies
+  Retrieve a list of companies
 
-> Example response
+  > Example response
 
-```json
-[
+  ```json
+  [
+    {
+      "id": 1,
+      "name": "Google",
+      "advisor": "Adam Smith",
+      "gender": "male",
+      "meetingDate": "2021-10-31"
+    },
+    {
+      "id": 2,
+      "name": "Netflix",
+      "advisor": "Simen Newton",
+      "gender": "female",
+      "meetingDate": "2021-04-11"
+    }
+  ]
+  ```
+
+  <h4 id="get-list-of-all-companies-responses">Responses</h3>
+
+  |Status|Meaning|Description|Schema|
+  |---|---|---|---|
+  |200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|List of companies|Inline|
+  |500|[Internal Server Error](https://tools.ietf.org/html/rfc7231#section-6.6.1)|Something went wrong|None|
+
+  <h4 id="get-list-of-all-companies-responseschema">Response Schema</h3>
+
+  Status Code **200**
+
+  |Name|Type|Required|Restrictions|Description|
+  |---|---|---|---|---|
+  |*ROOT*|[[Company](#schemacompany)]|true|none|[Model of company entry]|
+  |» Company|[Company](#schemacompany)|true|none|Model of company entry|
+  |»» id|integer|true|none|Unique identifier for the given company.|
+  |»» name|string|true|none|Name of the company|
+  |»» advisor|string|true|none|Full name of company's advisor|
+  |»» gender|string|true|none|male/female|
+  |»» meetingDate|string(date)|true|none|Date|
+
+  ### Enumerated Values
+
+  |Property|Value|
+  |---|---|
+  |gender|male|
+  |gender|female|
+
+  <aside class="success">
+  This operation does not require authentication
+  </aside>
+
+  ### Get list of all individuals
+
+  <a id="opIdget-individuals"></a>
+
+  `GET /individuals`
+
+  Retrieve a list of individuals
+
+  > Example response
+
+  ```json
+  [
+    {
+      "id": 1,
+      "name": "Ivan",
+      "surname": "Malkov",
+      "gender": "male",
+      "meetingDate": "2019-08-24"
+    }
+  ]
+  ```
+
+  <h3 id="get-list-of-all-individuals-responses">Responses</h3>
+
+  |Status|Meaning|Description|Schema|
+  |---|---|---|---|
+  |200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|List of individuals|Inline|
+  |500|[Internal Server Error](https://tools.ietf.org/html/rfc7231#section-6.6.1)|Something went wrong|None|
+
+  <h3 id="get-list-of-all-individuals-responseschema">Response Schema</h3>
+
+  Status Code **200**
+
+  |Name|Type|Required|Restrictions|Description|
+  |---|---|---|---|---|
+  |*ROOT*|[[Individual](#schemaindividual)]|true|none|[Model of Individual entry]|
+  |» Individual|[Individual](#schemaindividual)|true|none|Model of Individual entry|
+  |»» id|integer|true|none|Unique id of a person|
+  |»» name|string|true|none|First name of a person|
+  |»» surname|string|true|none|Person's surname|
+  |»» gender|string|true|none|male/female|
+  |»» meetingDate|string(date)|true|none|Date|
+
+  #### Enumerated Values
+
+  |Property|Value|
+  |---|---|
+  |gender|male|
+  |gender|female|
+
+  <aside class="success">
+  This operation does not require authentication
+  </aside>
+
+
+
+  ## Schemas
+
+  <h3 id="tocS_Company">Company</h2>
+  <!-- backwards compatibility -->
+  <a id="schemacompany"></a>
+  <a id="schema_Company"></a>
+  <a id="tocScompany"></a>
+  <a id="tocscompany"></a>
+
+  ```json
   {
-    "id": 1,
-    "name": "Google",
-    "advisor": "Adam Smith",
-    "gender": "male",
-    "meetingDate": "2021-10-31"
-  },
-  {
-    "id": 2,
-    "name": "Netflix",
-    "advisor": "Simen Newton",
-    "gender": "female",
-    "meetingDate": "2021-04-11"
-  }
-]
-```
-
-<h4 id="get-list-of-all-companies-responses">Responses</h3>
-
-|Status|Meaning|Description|Schema|
-|---|---|---|---|
-|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|List of companies|Inline|
-|500|[Internal Server Error](https://tools.ietf.org/html/rfc7231#section-6.6.1)|Something went wrong|None|
-
-<h4 id="get-list-of-all-companies-responseschema">Response Schema</h3>
-
-Status Code **200**
-
-|Name|Type|Required|Restrictions|Description|
-|---|---|---|---|---|
-|*ROOT*|[[Company](#schemacompany)]|true|none|[Model of company entry]|
-|» Company|[Company](#schemacompany)|true|none|Model of company entry|
-|»» id|integer|true|none|Unique identifier for the given company.|
-|»» name|string|true|none|Name of the company|
-|»» advisor|string|true|none|Full name of company's advisor|
-|»» gender|string|true|none|male/female|
-|»» meetingDate|string(date)|true|none|Date|
-
-### Enumerated Values
-
-|Property|Value|
-|---|---|
-|gender|male|
-|gender|female|
-
-<aside class="success">
-This operation does not require authentication
-</aside>
-
-### Get list of all individuals
-
-<a id="opIdget-individuals"></a>
-
-`GET /individuals`
-
-Retrieve a list of individuals
-
-> Example response
-
-```json
-[
-  {
-    "id": 1,
-    "name": "Ivan",
-    "surname": "Malkov",
+    "id": 0,
+    "name": "string",
+    "advisor": "string",
     "gender": "male",
     "meetingDate": "2019-08-24"
   }
-]
-```
 
-<h3 id="get-list-of-all-individuals-responses">Responses</h3>
+  ```
 
-|Status|Meaning|Description|Schema|
-|---|---|---|---|
-|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|List of individuals|Inline|
-|500|[Internal Server Error](https://tools.ietf.org/html/rfc7231#section-6.6.1)|Something went wrong|None|
+  ### Properties
 
-<h3 id="get-list-of-all-individuals-responseschema">Response Schema</h3>
+  |Name|Type|Required|Restrictions|Description|
+  |---|---|---|---|---|
+  |id|integer|true|none|Unique identifier for the given company.|
+  |name|string|true|none|Name of the company|
+  |advisor|string|true|none|Full name of company's advisor|
+  |gender|string|true|none|male/female|
+  |meetingDate|string(date)|true|none|Date|
 
-Status Code **200**
+  #### Enumerated Values
 
-|Name|Type|Required|Restrictions|Description|
-|---|---|---|---|---|
-|*ROOT*|[[Individual](#schemaindividual)]|true|none|[Model of Individual entry]|
-|» Individual|[Individual](#schemaindividual)|true|none|Model of Individual entry|
-|»» id|integer|true|none|Unique id of a person|
-|»» name|string|true|none|First name of a person|
-|»» surname|string|true|none|Person's surname|
-|»» gender|string|true|none|male/female|
-|»» meetingDate|string(date)|true|none|Date|
+  |Property|Value|
+  |---|---|
+  |gender|male|
+  |gender|female|
 
-#### Enumerated Values
+  <h2 id="tocS_Individual">Individual</h2>
+  <!-- backwards compatibility -->
+  <a id="schemaindividual"></a>
+  <a id="schema_Individual"></a>
+  <a id="tocSindividual"></a>
+  <a id="tocsindividual"></a>
 
-|Property|Value|
-|---|---|
-|gender|male|
-|gender|female|
+  ```json
+  {
+    "id": 0,
+    "name": "string",
+    "surname": "string",
+    "gender": "male",
+    "meetingDate": "2019-08-24"
+  }
 
-<aside class="success">
-This operation does not require authentication
-</aside>
-
-
-
-## Schemas
-
-<h3 id="tocS_Company">Company</h2>
-<!-- backwards compatibility -->
-<a id="schemacompany"></a>
-<a id="schema_Company"></a>
-<a id="tocScompany"></a>
-<a id="tocscompany"></a>
-
-```json
-{
-  "id": 0,
-  "name": "string",
-  "advisor": "string",
-  "gender": "male",
-  "meetingDate": "2019-08-24"
-}
-
-```
-
-### Properties
-
-|Name|Type|Required|Restrictions|Description|
-|---|---|---|---|---|
-|id|integer|true|none|Unique identifier for the given company.|
-|name|string|true|none|Name of the company|
-|advisor|string|true|none|Full name of company's advisor|
-|gender|string|true|none|male/female|
-|meetingDate|string(date)|true|none|Date|
-
-#### Enumerated Values
-
-|Property|Value|
-|---|---|
-|gender|male|
-|gender|female|
-
-<h2 id="tocS_Individual">Individual</h2>
-<!-- backwards compatibility -->
-<a id="schemaindividual"></a>
-<a id="schema_Individual"></a>
-<a id="tocSindividual"></a>
-<a id="tocsindividual"></a>
-
-```json
-{
-  "id": 0,
-  "name": "string",
-  "surname": "string",
-  "gender": "male",
-  "meetingDate": "2019-08-24"
-}
-
-```
+  ```
 
 
-### Properties
+  ### Properties
 
-|Name|Type|Required|Restrictions|Description|
-|---|---|---|---|---|
-|id|integer|true|none|Unique id of a person|
-|name|string|true|none|First name of a person|
-|surname|string|true|none|Person's surname|
-|gender|string|true|none|male/female|
-|meetingDate|string(date)|true|none|Date|
+  |Name|Type|Required|Restrictions|Description|
+  |---|---|---|---|---|
+  |id|integer|true|none|Unique id of a person|
+  |name|string|true|none|First name of a person|
+  |surname|string|true|none|Person's surname|
+  |gender|string|true|none|male/female|
+  |meetingDate|string(date)|true|none|Date|
 
-#### Enumerated Values
+  #### Enumerated Values
 
-|Property|Value|
-|---|---|
-|gender|male|
-|gender|female|
+  |Property|Value|
+  |---|---|
+  |gender|male|
+  |gender|female|
+
+<br></details><br>
 
 
+### 📋 Criteria
+> aka. evaluation, success criteria, quality assurance, qa, etc. - they're all pointing to the same thing. This section.
 
-[to table of contents](#table-of-content)
+Your solution will be quality assured / evaluated based on a set of criteria (aka. acceptance criteria, success criteria, etc.). 
+
+Your performance will be evaluated on primarily these two fronts; design and code. 
+The weights of these is roughly 40% on design and 60% on the code, and the questions are asked in order of importance within their respective subfields.
+
+- **Design QA:** 
+  - does your implementation match with the Design handoff, both in color and general aesthetics ? 
+  - have you properly aligned your components following the grids and guidelines of the handoff ? 
+- **Code QA:**
+  - are your component interfaces logical and well-named, and are they easy for others to build with ? 
+  - is your code consistent with the specifications provided ? (If unsure why; read up on Design-First ![swagger-blog on api-design](https://swagger.io/blog/api-design/design-first-or-code-first-api-development/) )
+  - is your code clean, following internally consistent rules w.r.t spacing, quote-marks etc ?
+  - are you using modern syntax, e.g. making use of React Hooks over class components ?
+
+[back to table of contents](#table-of-content)
