@@ -3,23 +3,23 @@
 ![Chart Challenge](src/assets/images/project.png)
 
 ### Table of Content:
-- [Intro](#-Intro)
-  - [Setup](#-Setup)
-  - [What to do](#-What-To-Do)
-  - [Folder Structure](#-📁-Folder-Structure)
-  - [Evaluation](#-What-will-be-evaluated)
-  - [Recommended Libraries](#-🗁-Recommended-Libraries)
+- [Intro](#intro)
+  - [Setup](#setup)
+  - [What to do](#what-to-do)
+  - [Folder Structure](#folder-Structure)
+  - [Evaluation](#what-will-be-evaluated)
+  - [Recommended Libraries](#Recommended-Libraries)
   
 **Section Specs**
-- [Front End](#-Front-End)
+- [Front End](#front-End)
   - [Front End specs](#-🔑-Front-End-Requirements:)
   - [XD Handoff](#-🎨-Design-Handoff)
-- [Chart API](#-Chart-API)
+- [Chart API](#chart-API)
   - [Chart API requirements](#-🔑-Chart-API-Requirements)
   - [API Specifications](#-API-Specifications)
   - [Get list of companies](#-Get-list-of-all-companies)
   - [Get list of individuals](#-Get-list-of-all-individuals)
-  - [Schemas](#-Schemas)
+  - [Schemas](#schemas)
 
 
 ### 🚀 Quickstart
@@ -82,7 +82,7 @@ So, in summary:
 
 
 # Intro
-[to table of contents](#-Table-of-Content:)
+[to table of contents](#table-of-content:)
 
 This first section should provide you with the overview to get started, and serve as a quick reference for what to do next. 
 
@@ -126,7 +126,7 @@ The weights of these is roughly 40% on design and 60% on the code, and the quest
 
 --- 
 # Front End :
-[to table of contents](#-Table-of-Content:)
+[to table of contents](#table-of-content:)
 This section contains the information regarding the front-end implementation expected from you. 
 While 
 
@@ -167,7 +167,7 @@ While
 ---
 
 # Chart API:
-[to table of contents](#-Table-of-Content:)
+[to table of contents](#table-of-content:)
 
 
 ### 🔑 Chart API Requirements
@@ -381,4 +381,4 @@ This operation does not require authentication
 
 
 
-[to table of contents](#-Table-of-Content:)
+[to table of contents](#table-of-content:)
