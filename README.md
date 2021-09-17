@@ -323,13 +323,48 @@ So, in summary:
 Your performance will be evaluated on primarily these two fronts; design and code. 
 The weights of these is roughly 40% on design and 60% on the code, and the questions are asked in order of importance within their respective subfields.
 
-- **Design QA:** 
-  - does your implementation match with the Design handoff, both in color and general aesthetics ? 
-  - have you properly aligned your components following the grids and guidelines of the handoff ? 
-- **Code QA:**
-  - are your component interfaces logical and well-named, and are they easy for others to build with ? 
-  - is your code consistent with the specifications provided ? (If unsure why; read up on Design-First ![swagger-blog on api-design](https://swagger.io/blog/api-design/design-first-or-code-first-api-development/) )
-  - is your code clean, following internally consistent rules w.r.t spacing, quote-marks etc ?
-  - are you using modern syntax, e.g. making use of React Hooks over class components ?
+#### Design
 
-[back to table of contents](#table-of-content)
+- **Overall Visual Comparison** (7 points)
+  > Does your implementation match with the design hand-off, both in color and general aesthetics?
+
+  <details>
+  <summary>More Info</summary>The running version should look as similar to the design as possible. Multiple iterations have been done on the design side in communication with potential users, so it’s paramount that the end result looks as identical to the design as possible.</details><br>
+
+- **Alignment Comparison** (2 points)
+  > have you properly aligned your components following the grids and guidelines of the hand-off?
+
+  <details>
+  <summary>More Info</summary>Is the page following the same grids and guidelines as the example? Are the different elements placed correctly? This is important to avoid the page being chaotic and to make it look professional.</details><br>
+
+#### Code
+
+- **API Specification Comparison** (9 points)
+  > does your implementation follow the API specification?
+
+  <details>
+  <summary>More Info</summary>You have been provided with an OpenAPI specification file. Think of it like the design of your API. You should aim to follow this specification perfectly in your implementation. This criteria evaluates how well you've managed to do so.
+  
+  The OpenAPI Specification, previously known as the Swagger Specification, is a specification for machine-readable interface files for describing, producing, consuming, and visualizing RESTful web services.</details><br>
+
+- **Code Readability** (6 points)
+  > is your code easy to understand (i.e. simple naming & syntax) and well presented (i.e. consistent & well documented where needed)?
+
+  <details>
+  <summary>More Info</summary>Readability is the ease with which a reader can understand your code. In programming, things such as programmer comments, choice of loop structure, and choice of names can determine the ease with which humans can read computer program code. 
+
+  It is especially important to Innovation Norway that you include lambda expressions - so be sure to include those. In addition, many other modern syntax features improves readability, so try your best to use these where it makes sense.</details><br>
+
+- **Unit & Integration Tests** (4 points)
+  > have you added unit and integration tests where it's appropriate?
+
+  <details>
+  <summary>More Info</summary>A primary purpose of testing is to detect software failures so that defects may be discovered and corrected. Good tests helps us determine if the code does what it's supposed to do. It also helps protect against side-effects and regressions caused by future refactoring of the codebase.
+
+  We want you to determine, using your own best judgement, where unit and integration tests are appropriate for your implementation. Adding comments in your tests describing shortly why you've decided to test these particular parts of the codebase could help in the review of your work.</details><br>
+
+- **Clear Component Interfaces** (2 points)
+  > are your component interfaces logical and well-named, and are they easy for others to build with?
+
+  <details>
+  <summary>More Info</summary>Your component interfaces matter. The names you choose for props, their descriptions and the default values all help to make it easier for other developers to build with your components.</details><br>
