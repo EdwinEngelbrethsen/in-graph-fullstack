@@ -320,8 +320,7 @@ So, in summary:
 ### 📋 Criteria
 > evaluation, success criteria, quality assurance, qa, etc. - they're all referring to the same thing. This section. 
 
-Your performance will be evaluated on primarily these two fronts; design and code. 
-The weights of these is roughly 40% on design and 60% on the code, and the questions are asked in order of importance within their respective subfields.
+Your solution will be reviewed by a qualified developer and a qualified designer, just like it would in a normal day-to-day work situation. Below you can find the criteria that together will deterimen your score in the challenge.
 
 #### Design
 
