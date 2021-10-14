@@ -108,7 +108,7 @@ So, in summary:
 <details>
   <summary><b>🖥 Back-End Details</b></summary>
 
-  Please use the latest version of Asp.Net Core for your back-end solution. This is what Innovation Norway uses internally.
+  Please use ASP.NET Core 5 Web API for your back-end solution. This is what Innovation Norway uses internally.
 
   Please create mock/dummy data for your solution. We don't provide you with any data set. This data doesn't have to be perfect. It does however need to follow the provided OpenAPI specification.
 
