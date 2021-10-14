@@ -48,14 +48,15 @@
   <summary><b>📁 Folder Structure</b></summary>
   Here’s an overview of the folder structure. Each element is briefly described.
 
-      ├── public/    # contains the HTML file so you can tweak it, for example, to set the page title and other static files
-      ├── spec/    # contains the OpenAPI spec file you can use to build API
-      ├── src/               # the main container for your project
+      ├── api/        # place your ASP.NET Core API in this folder
+      ├── public/     # contains the HTML file so you can tweak it, for example, to set the page title and other static files
+      ├── spec/       # contains the OpenAPI spec file you can use to build API
+      ├── src/        # the main container for your project
       │   │
-      │   ├── assets/          # images, icons, colors
-      │   ├── components/          # anything that could be a reusable piece of UI lands here
-      │   ├── screens/       # each screen is build with multiple components and together they create a screen to display for a user such as Homepage, About, Catalog etc
-      │   ├── utls/      # reusable JavaScript functions that support the project such as custom hooks
+      │   ├── assets/       # images, icons, colors
+      │   ├── components/   # anything that could be a reusable piece of UI lands here
+      │   ├── screens/      # each screen is build with multiple components and together they create a screen to display for a user such as Homepage, About, Catalog etc
+      │   ├── utls/         # reusable JavaScript functions that support the project such as custom hooks
 <br></details><br>
 
 ### 🎯 What To Do
@@ -107,8 +108,14 @@ So, in summary:
 <details>
   <summary><b>🖥 Back-End Details</b></summary>
 
+  Please use the latest version of Asp.Net Core for your back-end solution. This is what Innovation Norway uses internally.
+
+  Please create mock/dummy data for your solution. We don't provide you with any data set. This data doesn't have to be perfect. It does however need to follow the provided OpenAPI specification.
+
+  You do not have to create a database for this challenge. Mock/dummy data is sufficient.
+
 - **Chart API**
-  - RESTful API built with ASP.NET framework
+  - RESTful API built with ASP.NET Core framework
   - Fully complies with OpenAPI spec provided
   - You can add security features (like token auth) for bonus points (not included in OpenAPI spec)
 
