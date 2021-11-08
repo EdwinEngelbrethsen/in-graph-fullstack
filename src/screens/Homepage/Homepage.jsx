@@ -10,31 +10,31 @@ const Homepage = () => {
   const [companiesData] = useState([]);
   const [currentUser] = useState("Elsa Andersen");
 
-  const [individuals] = useState({
-    labels: ["", "Jun'19", "Jul'19", "Aug'19", "Sep'19", "Oct'19", "Nov'19", "Dec'19", ""],
+  const [individuals, setIndividuals] = useState({
+    labels: [""],
     label: "Signups",
-    data: [0, 9, 3, 6, 4, 4, 3, 9, 8],
+    data: [0],
   });
-  const [companies] = useState({
-    labels: ["", "Jun'19", "Jul'19", "Aug'19", "Sep'19", "Oct'19", "Nov'19", "Dec'19", ""],
+  const [companies, setCompanies] = useState({
+    labels: [""],
     label: "Signups",
-    data: [0, 6, 4, 9, 7, 4, 5, 8, 5],
+    data: [],
   });
 
   const [doughnut] = useState({
-    data: [364, 284],
+    data: [0, 0],
     labels: ["Companies", "Individuals"],
   });
 
   const [h_currentPage, setH_currentPage] = useState(1);
   const [v_current, setV_current] = useState(1);
   const [header_info] = useState({
-    totalSignups: 648,
-    lastWeek: 12,
-    totalInvestments: 102,
+    totalSignups: 0,
+    lastWeek: 0,
+    totalInvestments: 0,
     currency: "NOK",
-    value: "345,565",
-    totalExits: 23,
+    value: "0",
+    totalExits: 0,
   });
   const [header_select] = useState([
     { id: 1, name: "Overview1" },
@@ -44,11 +44,17 @@ const Homepage = () => {
   const [header_displayed] = useState("Overview");
   const [sort_displayed_gender, setSort_displayed_gender] = useState("Gender");
   const [sort_displayed_type, setSort_displayed_type] = useState("Type");
-  const [sort_displayed_value, setSort_displayed_value] = useState("102");
+  const [sort_displayed_value, setSort_displayed_value] = useState("0");
   const [anti_loop, setAnti_loop] = useState(false);
 
   useEffect(() => {
     sort_handleDisplayedValue();
+  }, []);
+
+  useEffect(() => {
+    //fetch data from API and update state
+    setIndividuals(data)
+    setCompanies(data)
   }, []);
 
   const h_handlePageChange = (page) => {
