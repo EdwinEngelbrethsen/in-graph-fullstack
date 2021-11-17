@@ -5,24 +5,34 @@ import MainBoard from "../../components/MainBoard/MainBoard";
 
 import styles from "./Homepage.module.css";
 
+
 const Homepage = () => {
   const [individualsData] = useState([]);
   const [companiesData] = useState([]);
   const [currentUser] = useState("Elsa Andersen");
 
+  /* https://www.codegrepper.com/code-examples/javascript/generate+multiple+random+numbers+javascript */
+  var RandomNumber = [];
+  while (RandomNumber.length < 6) {
+    var random = Math.floor(Math.random() * 25) + 1;
+    if (RandomNumber.indexOf(random) === -1) {
+      RandomNumber.push(random);
+    }
+  }
+
   const [individuals, setIndividuals] = useState({
-    labels: [""],
-    label: "Signups",
-    data: [0],
+    labels: ["Jun'19", "Jul'19", "Aug'19", "Sep'19", "Oct'19", "Nov'19"],
+    label: "Site Traffic",
+    data: RandomNumber,
   });
   const [companies, setCompanies] = useState({
-    labels: [""],
-    label: "Signups",
-    data: [],
+    labels: ["Jun'19", "Jul'19", "Aug'19", "Sep'19", "Oct'19", "Nov'19"],
+    label: "Company",
+    data: RandomNumber,
   });
 
   const [doughnut] = useState({
-    data: [0, 0],
+    data: [246, 368],
     labels: ["Companies", "Individuals"],
   });
 
@@ -47,14 +57,22 @@ const Homepage = () => {
   const [sort_displayed_value, setSort_displayed_value] = useState("0");
   const [anti_loop, setAnti_loop] = useState(false);
 
-  useEffect(() => {
-    sort_handleDisplayedValue();
-  }, []);
 
   useEffect(() => {
-    //fetch data from API and update state
-    setIndividuals(data)
-    setCompanies(data)
+    sort_handleDisplayedValue();
+
+    fetch("https://localhost:44341/api/Company")
+      .then(res => res.json())
+      .then(data => setCompanies(data))
+      .catch(err => console.log(err));
+
+    fetch("https://localhost:44341/api/Individual")
+      .then(res => res.json())
+      .then(data => setIndividuals(data))
+      .catch(err => console.log(err));
+
+    console.log(companies);
+    console.log(individuals);
   }, []);
 
   const h_handlePageChange = (page) => {
@@ -72,6 +90,10 @@ const Homepage = () => {
 
     return length;
   };
+
+
+
+
 
   const sort_handleDisplayedValue = () => {
     let displayedGender = sort_displayed_gender;

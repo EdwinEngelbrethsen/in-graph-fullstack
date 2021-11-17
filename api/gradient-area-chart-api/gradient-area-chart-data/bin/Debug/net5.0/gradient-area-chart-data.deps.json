@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "gradient-area-chart-data/1.0.0": {
+        "runtime": {
+          "gradient-area-chart-data.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "gradient-area-chart-data/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

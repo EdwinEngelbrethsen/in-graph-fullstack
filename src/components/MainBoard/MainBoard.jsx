@@ -14,6 +14,8 @@ import verificationIcon from "../../assets/icons/verificationIcon.svg";
 import lockedPadlock from "../../assets/icons/lockedPadlock.svg";
 
 import styles from "./MainBoard.module.css";
+import CompanyChart from "../ApplicationChart/CompanyChart";
+import SiteTrafficChart from "../SiteTrafficChart/SiteTrafficChart";
 
 const MainBoard = ({
   individualsData,
@@ -84,10 +86,12 @@ const MainBoard = ({
               <div className={styles.upperChart}>
                 {/* Individuals Chart */}
                 {/* Required data: individuals */}
+                <CompanyChart props={companies}/>
               </div>
               <div className={styles.lowerChart}>
                 {/* Companies Chart */}
                 {/* Required data: companies */}
+                <SiteTrafficChart props={individuals} />
               </div>
             </div>
             <div className={styles.displayInfo}>

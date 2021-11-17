@@ -1,0 +1,12 @@
+E:\Backup\Diggit\in-graph-fs\gradient-area-charts-fs\api\gradient-area-chart-api\gradient-area-chart-data\bin\Debug\net5.0\gradient-area-chart-data.deps.json
+E:\Backup\Diggit\in-graph-fs\gradient-area-charts-fs\api\gradient-area-chart-api\gradient-area-chart-data\bin\Debug\net5.0\gradient-area-chart-data.dll
+E:\Backup\Diggit\in-graph-fs\gradient-area-charts-fs\api\gradient-area-chart-api\gradient-area-chart-data\bin\Debug\net5.0\ref\gradient-area-chart-data.dll
+E:\Backup\Diggit\in-graph-fs\gradient-area-charts-fs\api\gradient-area-chart-api\gradient-area-chart-data\bin\Debug\net5.0\gradient-area-chart-data.pdb
+E:\Backup\Diggit\in-graph-fs\gradient-area-charts-fs\api\gradient-area-chart-api\gradient-area-chart-data\obj\Debug\net5.0\gradient-area-chart-data.csproj.AssemblyReference.cache
+E:\Backup\Diggit\in-graph-fs\gradient-area-charts-fs\api\gradient-area-chart-api\gradient-area-chart-data\obj\Debug\net5.0\gradient-area-chart-data.GeneratedMSBuildEditorConfig.editorconfig
+E:\Backup\Diggit\in-graph-fs\gradient-area-charts-fs\api\gradient-area-chart-api\gradient-area-chart-data\obj\Debug\net5.0\gradient-area-chart-data.AssemblyInfoInputs.cache
+E:\Backup\Diggit\in-graph-fs\gradient-area-charts-fs\api\gradient-area-chart-api\gradient-area-chart-data\obj\Debug\net5.0\gradient-area-chart-data.AssemblyInfo.cs
+E:\Backup\Diggit\in-graph-fs\gradient-area-charts-fs\api\gradient-area-chart-api\gradient-area-chart-data\obj\Debug\net5.0\gradient-area-chart-data.csproj.CoreCompileInputs.cache
+E:\Backup\Diggit\in-graph-fs\gradient-area-charts-fs\api\gradient-area-chart-api\gradient-area-chart-data\obj\Debug\net5.0\gradient-area-chart-data.dll
+E:\Backup\Diggit\in-graph-fs\gradient-area-charts-fs\api\gradient-area-chart-api\gradient-area-chart-data\obj\Debug\net5.0\ref\gradient-area-chart-data.dll
+E:\Backup\Diggit\in-graph-fs\gradient-area-charts-fs\api\gradient-area-chart-api\gradient-area-chart-data\obj\Debug\net5.0\gradient-area-chart-data.pdb
