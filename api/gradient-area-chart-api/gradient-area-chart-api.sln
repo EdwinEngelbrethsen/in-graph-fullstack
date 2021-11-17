@@ -5,7 +5,9 @@ VisualStudioVersion = 16.0.31829.152
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "gradient-area-chart-api", "gradient-area-chart-api\gradient-area-chart-api.csproj", "{26F29277-512A-4DA8-8542-5736E913F8C5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "gradient-area-chart-data", "gradient-area-chart-data\gradient-area-chart-data.csproj", "{2327A63E-5876-499E-9E7F-EDCE61EF0086}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "gradient-area-chart-data", "gradient-area-chart-data\gradient-area-chart-data.csproj", "{2327A63E-5876-499E-9E7F-EDCE61EF0086}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "test-gradient-area-chart", "test-gradient-area-chart\test-gradient-area-chart.csproj", "{CC98C081-3938-434D-A7EE-8303F352FBD0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{2327A63E-5876-499E-9E7F-EDCE61EF0086}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2327A63E-5876-499E-9E7F-EDCE61EF0086}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2327A63E-5876-499E-9E7F-EDCE61EF0086}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CC98C081-3938-434D-A7EE-8303F352FBD0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC98C081-3938-434D-A7EE-8303F352FBD0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC98C081-3938-434D-A7EE-8303F352FBD0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC98C081-3938-434D-A7EE-8303F352FBD0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

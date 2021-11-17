@@ -14,6 +14,7 @@ namespace gradient_area_chart_api.Controllers {
     public class CompanyController : ControllerBase {
 
         private CompanyRepository companies = new CompanyRepository();
+        
 
         [HttpGet]
         public ActionResult<IEnumerable<Company>> GetAllCompanies() {

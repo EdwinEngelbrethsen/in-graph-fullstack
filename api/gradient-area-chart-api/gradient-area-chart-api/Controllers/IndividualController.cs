@@ -14,6 +14,10 @@ namespace gradient_area_chart_api.Controllers {
 
         private IndividualRepository individuals = new IndividualRepository();
 
+        /*public IndividualController(IndividualRepository _individuals) {
+            this.individuals = _individuals;
+        }*/
+
         [HttpGet]
         public ActionResult<IEnumerable<Individual>> GetAllIndividual() {
             return individuals.GetAllIndividual();
