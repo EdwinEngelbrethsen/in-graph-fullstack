@@ -7,16 +7,17 @@ const SiteTrafficChart = ({ props }) => {
     const chartContainer = useRef(null);
     const [chartInstance, setChartInstance] = useState(null);
 
+
     const siteTrafficChart = {
         type: 'line',
         data: {
             datasets: [{
                 data: props.data,
                 label: "Signups",
-                backgroundColor: '#AAFF00',
-                borderColor: 'transparent',
-                borderWidth: 1,
-                smooth: true,
+                backgroundColor: 'rgba(255, 199, 200, 0.5)',
+                borderColor: 'rgba(255, 99, 132, 1)',
+                tension: 0.3,
+                fill: true
             }],
             labels: props.labels,
         },
@@ -49,7 +50,7 @@ const SiteTrafficChart = ({ props }) => {
 
     return (
         <>
-            <canvas ref={chartContainer}/>
+            <canvas id="myChart" ref={chartContainer}/>
         </>
     )
 

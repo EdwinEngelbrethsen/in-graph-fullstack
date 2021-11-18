@@ -20,10 +20,10 @@ const CompanyChart = ( { props } ) => {
             datasets: [{
                 data: props.data,
                 label: "Signups",
-                backgroundColor: '#00AAFF',
-                borderColor: 'transparent',
-                borderWidth: 1,
-                smooth: true,
+                backgroundColor: 'rgba(50, 50, 217, 0.2)',
+                borderColor: 'rgba(99, 99, 255, 1)',
+                tension: 0.5,
+                fill: true
             }],
         labels: props.labels,
         },
