@@ -86,12 +86,12 @@ const MainBoard = ({
               <div className={styles.upperChart}>
                 {/* Individuals Chart */}
                 {/* Required data: individuals */}
-                <CompanyChart props={companies}/>
+                <CompanyChart data={companies.data} labels={companies.labels} label={companies.label}/>
               </div>
               <div className={styles.lowerChart}>
                 {/* Companies Chart */}
                 {/* Required data: companies */}
-                <SiteTrafficChart props={individuals} />
+                <SiteTrafficChart data={individuals.data} labels={individuals.labels} label={individuals.label}/>
               </div>
             </div>
             <div className={styles.displayInfo}>

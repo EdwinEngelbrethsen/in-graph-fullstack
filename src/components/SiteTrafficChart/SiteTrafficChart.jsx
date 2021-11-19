@@ -1,9 +1,61 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { createRef, Component } from "react";
 import Chart from "chart.js";
 import '../SiteTrafficChart/SiteTrafficChart.Module.css';
 
 
-const SiteTrafficChart = ({ props }) => {
+class SiteTrafficChart extends Component {
+    chartRef = createRef();
+    
+    componentDidMount() {
+        const ctx = this.chartRef.current.getContext("2d");
+    
+        const { data, labels, label } = this.props;
+
+        var gradientBg = ctx.createLinearGradient(0, 0, 0, 450);
+        gradientBg.addColorStop(0.5, 'rgba(153, 49, 232)');
+        gradientBg.addColorStop(1, 'rgba(255, 255, 255, 0.5)');
+    
+        new Chart(ctx, {
+        type: "line",
+        data: {
+            labels,
+            datasets: [
+            {
+                data: data,
+                label: "Users",
+                backgroundColor: gradientBg,
+                borderColor: "transparent",
+            },
+            ],
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            cutoutPercentage: 77,
+            title: {
+                display: true,
+                text: label
+            },
+            centerText: {
+                display: true,
+                text: '250',
+            },
+            legend: {
+                display: true,
+            }
+        },
+        });
+    }
+    
+    render() {
+        return <canvas ref={this.chartRef} />;
+    }
+}
+
+export default SiteTrafficChart;
+
+
+/* const SiteTrafficChart = ({ props }) => {
     const chartContainer = useRef(null);
     const [chartInstance, setChartInstance] = useState(null);
 
@@ -57,4 +109,4 @@ const SiteTrafficChart = ({ props }) => {
 };
 
 
-export default SiteTrafficChart;
+export default SiteTrafficChart; */

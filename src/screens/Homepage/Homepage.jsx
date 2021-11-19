@@ -39,12 +39,12 @@ const Homepage = () => {
   const [h_currentPage, setH_currentPage] = useState(1);
   const [v_current, setV_current] = useState(1);
   const [header_info] = useState({
-    totalSignups: 0,
-    lastWeek: 0,
-    totalInvestments: 0,
+    totalSignups: 614,
+    lastWeek: 12,
+    totalInvestments: 170,
     currency: "NOK",
-    value: "0",
-    totalExits: 0,
+    value: "345,565",
+    totalExits: 23,
   });
   const [header_select] = useState([
     { id: 1, name: "Overview1" },
@@ -70,9 +70,6 @@ const Homepage = () => {
       .then(res => res.json())
       .then(data => setIndividuals(data))
       .catch(err => console.log(err));
-
-    console.log(companies);
-    console.log(individuals);
   }, []);
 
   const h_handlePageChange = (page) => {
