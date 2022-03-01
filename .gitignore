@@ -6,6 +6,7 @@
 !.vscode/extensions.json
 *.code-workspace
 
+
 # Local History for Visual Studio Code
 .history/
 
@@ -16,7 +17,8 @@
 .LSOverride
 
 # Icon must end with two \r
-Icon
+Icon
+
 
 # Thumbnails
 ._*
@@ -243,3 +245,5 @@ fabric.properties
 # Android studio 3.1+ serialized cache file
 .idea/caches/build_file_checksums.ser
 
+
+api/gradient-area-chart-api/.vs/
